@@ -48,7 +48,7 @@ $listDirn  = $this->escape($this->filter_order_Dir);
                 ?>
                 <tr>
                     <td><?php echo $this->pagination->getRowOffset($i); ?></td>
-                    <td><?php echo JHtml::_('grid.id', $i, $row->device); ?></td>
+                    <td><?php echo JHtml::_('grid.id', $i, $row->id); ?></td>
                     <td><a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_HEARTCARE_EDIT_DEVICE_INFO'); ?>" ><?php echo $row->device_id; ?></a></td>
                     <td><a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_HEARTCARE_EDIT_DEVICE_INFO'); ?>" ><?php echo $row->device_type; ?></a></td>
                     <td><a href="<?php echo $link; ?>" title="<?php echo JText::_('COM_HEARTCARE_EDIT_DEVICE_INFO'); ?>" ><?php echo $row->register_time; ?></a></td>
