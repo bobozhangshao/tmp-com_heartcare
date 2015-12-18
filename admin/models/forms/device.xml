@@ -8,6 +8,7 @@
                 description="COM_HEARTCARE_HEARTCARE_NAME_DESC"
                 size="40"
                 class="inputbox"
+                readonly="true"
                 default=""
         />
         <field
