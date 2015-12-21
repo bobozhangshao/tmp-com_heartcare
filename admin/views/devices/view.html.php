@@ -52,7 +52,10 @@ class HeartCareViewDevices extends JViewLegacy
     protected function addToolBar()
     {
         JToolbarHelper::title(JText::_('COM_HEARTCARE_MANAGER_DEVICES'));
-        //JToolbarHelper::addNew('user.add');
+        if($this->canDo->get('core.create'))
+        {
+            JToolbarHelper::addNew('device.add');
+        }
         if($this->canDo->get('core.edit'))
         {
             JToolbarHelper::editList('device.edit','JTOOLBAR_EDIT');
@@ -76,3 +79,4 @@ class HeartCareViewDevices extends JViewLegacy
         $document->setTitle(JText::_('COM_HEARTCARE_ADMINISTRATION'));
     }
 }
+
