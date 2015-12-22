@@ -16,7 +16,7 @@ class Com_HeartcareInstallerScript
 		$path = JPATH_SITE . '/images/devices';
 
 		if (!JFolder::exists($path)) {
-			JFolder::create($path, 0777);
+			JFolder::create($path);
 		}
 	}
 }
