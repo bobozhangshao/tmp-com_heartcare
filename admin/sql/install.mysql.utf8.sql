@@ -29,14 +29,6 @@ CREATE TABLE IF NOT EXISTS `#__health_data_category`(
   PRIMARY KEY (`id`)
 )DEFAULT CHARSET = utf8;
 
-CREATE TABLE IF NOT EXISTS `#__health_doctor_map`(
-  `user_id`               INT(11)      NOT NULL ,
-  `is_doctor`             TINYINT(4)   DEFAULT 0,
-  `description`           TEXT,
-  `doctors`               TEXT,
-  PRIMARY KEY (`user_id`)
-)DEFAULT CHARSET = utf8;
-
 INSERT INTO `#__health_data_category` (`data_type`) VALUES
   ('ECG'),
   ('ICG'),
