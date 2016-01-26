@@ -51,7 +51,7 @@ defined('_JEXEC') or die('Restricted Access');
                             </td>
 
                             <?php
-                            $link = JRoute::_('index.php/usercenter/health/health-record?tmpl=component&amp;view=heartcare&amp;layout=modal&amp;wave_id='.$row->id.'&amp;wave_route='.$row->data_route.'&amp;wave_type='.$row->data_type);
+                            $link = JRoute::_('index.php?option=com_heartcare&amp;tmpl=component&amp;view=heartcare&amp;layout=modal&amp;wave_id='.$row->id.'&amp;wave_route='.$row->data_route.'&amp;wave_type='.$row->data_type);
                             echo JHtml::_(
                                 'bootstrap.renderModal',
                                 'measureData'.$row->id.'Modal',
