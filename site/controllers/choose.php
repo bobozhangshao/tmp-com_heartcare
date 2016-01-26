@@ -35,7 +35,7 @@ class HeartCareControllerChoose extends JControllerForm
             return false;
         }
 
-        $this->setRedirect('index.php?option=com_heartcare&view=choose');
+        $this->setRedirect('index.php/usercenter/health/choose-doctor');
     }
 
 }
